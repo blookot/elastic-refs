@@ -44,6 +44,13 @@ _Tip_: use the newly defined [Elastic Common Schema](https://github.com/elastic/
 Once data are in, you can leverage the awesomeness of Elastic ML and Graph:
 TBC...
 
+### Correlating and alerting
+Elastic Watcher is used to correlate events (static or dynamically identified by ML) and alert via email, Slack, Jira, PagerDuty or any other system (see [documentation](https://www.elastic.co/guide/en/elastic-stack-overview/6.3/actions.html)). A few additional resources: 
+- first learn about Watcher on our [website](https://www.elastic.co/products/stack/alerting)
+- a few [examples of watches](https://github.com/elastic/examples/tree/master/Alerting/Sample%20Watches)
+- the [Sigma rules](https://github.com/Neo23x0/sigma) translated for Watcher on [Uncoder](https://uncoder.io/) (Select a sigma rule on the left, then Watcher on the droplist on the right and click Translate!)
+- integration with external SOAR (Security Orchestration and Automated Response) like [CyberSponse](https://cybersponse.com/resources/CyberSponse-Elastic-SolutionBrief.pdf)
+
 ## Content related to Machine Learning
 Here is a list of content refs to help start and understand Elastic ML:
 - beyond our [website intro](https://www.elastic.co/products/stack/machine-learning) and public demo listed up here, a lot of good stuff can be found in [blog posts](https://www.elastic.co/search?q=machine+learning&section=Learn%2FBlog), including  [intro](https://www.elastic.co/blog/introducing-machine-learning-for-the-elastic-stack), [how it works](https://www.elastic.co/blog/machine-learning-anomaly-scoring-elasticsearch-how-it-works), [advanced aggregations with derivative](https://www.elastic.co/blog/custom-elasticsearch-aggregations-for-machine-learning-jobs), [forecasting](https://www.elastic.co/blog/elasticsearch-machine-learning-on-demand-forecasting) 
