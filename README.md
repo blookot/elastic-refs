@@ -14,6 +14,8 @@ Is _**GDPR**_ a concern for you? Watch our [French webinar](https://www.elastic.
 ## Coming events
 We run a serie of 3 French webinars dedicated to _**Security Analytics**_. [Subscribe here](https://events.elastic.co/french-security-webinar-series) and watch replays of [episode 1](https://www.elastic.co/fr/webinars/security-analytics-webinar-french-episode-1) and [episode 2](https://www.elastic.co/fr/webinars/security-analytics-webinar-french-episode-2).
 
+We often organize daily _**hands-on workshops**_ on Operational Analytics, Security Analytics or Search typically. Contact us if you wish to participate.
+
 We often organize _**meetups**_ in France. You can [subscribe](https://www.meetup.com/fr-FR/ElasticFR) for coming ones or watch the [recordings](https://www.youtube.com/playlist?list=PLhLSfisesZIuhYrMtNXL7RUh-b3hwNokk) of previous meetups.
 
 ## Content related to Security Analytics
@@ -46,7 +48,7 @@ TBC...
 Here is a list of content refs to help start and understand Elastic ML:
 - beyond our [website intro](https://www.elastic.co/products/stack/machine-learning) and public demo listed up here, a lot of good stuff can be found in [blog posts](https://www.elastic.co/search?q=machine+learning&section=Learn%2FBlog), including  [intro](https://www.elastic.co/blog/introducing-machine-learning-for-the-elastic-stack), [how it works](https://www.elastic.co/blog/machine-learning-anomaly-scoring-elasticsearch-how-it-works), [advanced aggregations with derivative](https://www.elastic.co/blog/custom-elasticsearch-aggregations-for-machine-learning-jobs), [forecasting](https://www.elastic.co/blog/elasticsearch-machine-learning-on-demand-forecasting) 
 - ML recipes [here](https://www.elastic.co/products/stack/machine-learning/recipes)
-- examples of ML jobs [github](https://github.com/blookot/ml-examples)
+- examples of ML jobs on [github](https://github.com/blookot/ml-examples)
 - how to display the model in multi-metric jobs on [discuss](https://discuss.elastic.co/t/model-bounds-are-not-available/132529)
 - there are many other tips & tricks, so come and ping us to learn some more!
 
