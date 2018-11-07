@@ -40,11 +40,11 @@ _**Pseudonizing data**_ at ingestion is key, considering the GDPR regulation (se
 
 _Tip_: use the newly defined [Elastic Common Schema](https://github.com/elastic/ecs) to normalize your data and ease correlation, filtering and eventually sharing of dashboards, ML jobs, etc.
 
-### ... to running advanced analytics using Elastic Machine Learning and Graph
+### ... to running advanced analytics using Elastic Machine Learning and Graph...
 Once data are in, you can leverage the awesomeness of Elastic ML and Graph:
 TBC...
 
-### Correlating and alerting
+### ... and eventually correlating and alerting
 Elastic Watcher is used to correlate events (static or dynamically identified by ML) and alert via email, Slack, Jira, PagerDuty or any other system (see [documentation](https://www.elastic.co/guide/en/elastic-stack-overview/6.3/actions.html)). A few additional resources: 
 - first learn about Watcher on our [website](https://www.elastic.co/products/stack/alerting)
 - a few [examples of watches](https://github.com/elastic/examples/tree/master/Alerting/Sample%20Watches)
