@@ -12,8 +12,6 @@ You are using _**Docker or Kubernetes**_ ? Read [this](https://www.elastic.co/bl
 Is _**GDPR**_ a concern for you? Watch our [French webinar](https://www.elastic.co/fr/webinars/fr-gdpr-compliance-and-elasticsearch), read the related [whitepaper](https://www.elastic.co/fr/gdpr) and play with our [GDPR scanner](https://github.com/blookot/elastic-gdpr-scanner) to inventory your Elasticsearch instances and check for compliance.
 
 ## Coming events
-We run a serie of 3 French webinars dedicated to _**Security Analytics**_. [Subscribe here](https://events.elastic.co/french-security-webinar-series) and watch replays of [episode 1](https://www.elastic.co/fr/webinars/security-analytics-webinar-french-episode-1) and [episode 2](https://www.elastic.co/fr/webinars/security-analytics-webinar-french-episode-2).
-
 We often organize daily _**hands-on workshops**_ on Operational Analytics, Security Analytics or Search typically. Contact us if you wish to participate.
 
 We often organize _**meetups**_ in France. You can [subscribe](https://www.meetup.com/fr-FR/ElasticFR) for coming ones or watch the [recordings](https://www.youtube.com/playlist?list=PLhLSfisesZIuhYrMtNXL7RUh-b3hwNokk) of previous meetups.
@@ -22,14 +20,15 @@ We often organize _**meetups**_ in France. You can [subscribe](https://www.meetu
 ### Readings and watchings
 Using the Elastic stack for Security Analytics
 - To start with, of course, the [website page](https://www.elastic.co/solutions/security-analytics), [videos & webinars](https://www.elastic.co/search?q=security+analytics&section=Learn%2FVideos) and [blog posts](https://www.elastic.co/search?q=security+analytics&section=Learn%2FBlog)
-- watch our serie of 3 French webinars: [episode 1](https://www.elastic.co/fr/webinars/security-analytics-webinar-french-episode-1) and [episode 2](https://www.elastic.co/fr/webinars/security-analytics-webinar-french-episode-2) and episode 3 (coming soon)
+- watch our serie of 3 webinars (in French): [episode 1](https://www.elastic.co/fr/webinars/security-analytics-webinar-french-episode-1) and [episode 2](https://www.elastic.co/fr/webinars/security-analytics-webinar-french-episode-2) and episode 3 (coming soon)
 - and [another webinar](https://www.elastic.co/webinars/using-elasticsearch-and-the-elastic-stack-for-advanced-threat-hunting) dedicated to threat hunting!
+- have a look at the [customer stories](https://www.elastic.co/use-cases?usecase=security-analytics) and in particular [USAA](https://www.elastic.co/elasticon/conf/2016/sf/all-quiet-digital-front-security-analytics-usaa) that talks about enrichment and how they transfered many rules from their traditional SIEM, as well as [E-Trade](https://www.elastic.co/elasticon/tour/2018/chicago/elastic-at-etrade) that ingests 1M eps and intensively use ML, alerting and drilldown with 145 dashboards!
 - Great [blog post](https://www.elastic.co/blog/using-the-elastic-stack-as-a-saas-based-security-operations-swiss-army-knife) showing the use of beats and watches to build a SOC
 - and our great [Security Analytics training course](https://training.elastic.co/static/pdf/Elastic.Security.Analytics.pdf)
 
 ### Ingesting data...
 Ingestion is all about capture as widely as possible, and enriching to bring value to the raw data:
-- Using beats to _**capture**_ processes, OS events, file integrity changes, etc. Check the [osquery module](https://www.elastic.co/blog/brewing-in-beats-osquery-module-in-filebeat) and the [IDS coupling](https://www.elastic.co/fr/blog/improve-security-analytics-with-the-elastic-stack-wazuh-and-ids) as well as many distros combining the Elastic stack with IDS/IPS/HIDS like Security Onion, Wazuh (cf our [blog post](https://www.elastic.co/blog/improve-security-analytics-with-the-elastic-stack-wazuh-and-ids)), RockNSM, SOF-ELK, HELK, CAPESstack, SELKS...
+- Using beats to _**capture**_ processes, OS events, file integrity changes, etc. Check the [osquery module](https://www.elastic.co/blog/brewing-in-beats-osquery-module-in-filebeat), the [Suricata Filebeat module](https://www.elastic.co/guide/en/beats/filebeat/master/filebeat-module-suricata.html) and the [blog post on the Wazuh HIDS](https://www.elastic.co/fr/blog/improve-security-analytics-with-the-elastic-stack-wazuh-and-ids) as well as many distros combining the Elastic stack with IDS/IPS/HIDS like Security Onion, Wazuh (cf our [blog post](https://www.elastic.co/blog/improve-security-analytics-with-the-elastic-stack-wazuh-and-ids)), RockNSM, SOF-ELK, HELK, CAPESstack, SELKS...
 - Enrich data with threat intelligence feeds like [Blueliv](https://www.elastic.co/blog/how-blueliv-uses-the-elastic-stack-to-combat-cyber-threats), [AlienVault OTX](https://otx.alienvault.com/api) (direct link to the [IP reputation list](https://reputation.alienvault.com/reputation.generic) and a [quick script](https://www.syspanda.com/index.php/2017/08/26/detecting-outbound-connections-pt-2-logstash-threat-intelligence/) to fetch it), [URL blacklist](https://urlhaus.abuse.ch/browse/), Alexa's [URL whitelist](https://support.alexa.com/hc/en-us/articles/200449834-Does-Alexa-have-a-list-of-its-top-ranked-websites-) or the similar one from [Majestic](https://majestic.com/reports/majestic-million) (direct link to the [million URL](http://downloads.majestic.com/majestic_million.csv)), and finally a [combine script](https://github.com/mlsecproject/combine) to fetch these feeds into Logstash.
 
 How do you _**enrich**_? mostly using Logstash, see below:
@@ -42,14 +41,17 @@ _Tip_: use the newly defined [Elastic Common Schema](https://github.com/elastic/
 
 ### ... to running advanced analytics using Elastic Machine Learning and Graph...
 Once data are in, you can leverage the awesomeness of Elastic ML and Graph:
-TBC...
+- see our videos and in particular the episode 3 (coming soon)
+- have a look at our [ML recipes](https://www.elastic.co/products/stack/machine-learning/recipes) that describe in detail a few attacks and how to detect them
+- check a few other [ML examples](https://github.com/blookot/ml-examples#security) related to security analytics
 
-### ... and eventually correlating and alerting
+### ... and eventually correlating, alerting and responding
 Elastic Watcher is used to correlate events (static or dynamically identified by ML) and alert via email, Slack, Jira, PagerDuty or any other system (see [documentation](https://www.elastic.co/guide/en/elastic-stack-overview/6.3/actions.html)). A few additional resources: 
 - first learn about Watcher on our [website](https://www.elastic.co/products/stack/alerting)
 - a few [examples of watches](https://github.com/elastic/examples/tree/master/Alerting/Sample%20Watches)
 - the [Sigma rules](https://github.com/Neo23x0/sigma) translated for Watcher on [Uncoder](https://uncoder.io/) (Select a sigma rule on the left, then Watcher on the droplist on the right and click Translate!)
-- integration with external SOAR (Security Orchestration and Automated Response) like [CyberSponse](https://cybersponse.com/resources/CyberSponse-Elastic-SolutionBrief.pdf)
+- integration with external SOAR (Security Orchestration and Automated Response) like [CyberSponse](https://cybersponse.com/resources/CyberSponse-Elastic-SolutionBrief.pdf), SIEMplify, SOCprime...
+
 
 ## Content related to Machine Learning
 Here is a list of content refs to help start and understand Elastic ML:
