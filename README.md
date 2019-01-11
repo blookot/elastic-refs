@@ -23,7 +23,7 @@ Using the Elastic stack for Security Analytics
 - watch our serie of 3 webinars (in French): [episode 1](https://www.elastic.co/fr/webinars/security-analytics-webinar-french-episode-1) and [episode 2](https://www.elastic.co/fr/webinars/security-analytics-webinar-french-episode-2) and [episode 3](https://www.elastic.co/fr/webinars/security-analytics-webinar-french-episode-3)
 - and [another webinar](https://www.elastic.co/webinars/using-elasticsearch-and-the-elastic-stack-for-advanced-threat-hunting) dedicated to threat hunting!
 - have a look at the [customer stories](https://www.elastic.co/use-cases?usecase=security-analytics) and in particular [USAA](https://www.elastic.co/elasticon/conf/2016/sf/all-quiet-digital-front-security-analytics-usaa) that talks about enrichment and how they transfered many rules from their traditional SIEM, as well as [E-Trade](https://www.elastic.co/elasticon/tour/2018/chicago/elastic-at-etrade) that ingests 1M eps and intensively use ML, alerting and drilldown with 145 dashboards!
-- Great [blog post](https://www.elastic.co/blog/using-the-elastic-stack-as-a-saas-based-security-operations-swiss-army-knife) showing the use of beats and watches to build a SOC
+- Great [blog post](https://www.elastic.co/blog/using-the-elastic-stack-as-a-saas-based-security-operations-swiss-army-knife) showing the use of beats and watches to build a SOC, or how to [detect Wannacry](https://www.elastic.co/blog/malware-analysis-wannacry-elastic-stack) with auditbeat
 - and our great [Security Analytics training course](https://training.elastic.co/static/pdf/Elastic.Security.Analytics.pdf)
 
 ### Ingesting data...
